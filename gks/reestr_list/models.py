@@ -107,7 +107,7 @@ class Places(models.Model):
     def __str__(self):
         return self.place
 
-class User(models.Model):
+class Users(models.Model):
     username = models.CharField('Исполнитель', max_length=100, null=False, blank=False, unique=True)
 
     class Meta:

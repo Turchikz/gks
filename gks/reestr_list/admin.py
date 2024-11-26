@@ -63,6 +63,13 @@ class PlacesAdmin(admin.ModelAdmin):
     search_fields = ('place',)  # поиск
     list_filter = ('place',)  # фильтрация
 
+@admin.register(Users)
+class UsersAdmin(admin.ModelAdmin):
+    list_display = ('username',)
+    list_display_links = ('username',)  # гиперссылки
+    search_fields = ('username',)  # поиск
+    list_filter = ('username',)  # фильтрация
+
 class EtalonInline(admin.StackedInline):
     model = Register.etalons.through
 

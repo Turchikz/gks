@@ -1,0 +1,70 @@
+{% extends "index.html" %} {% block title %} Реестр {% endblock title %} 
+{% block body %}
+<table>
+  <tr>
+    <th>Номер протокола</th>
+    <th>Вид поверки</th>
+    <th>Дата поверки</th>
+    <th>МПИ</th>
+    <th>Действительно до</th>
+    <th>Наименование средства измерений</th>
+    <th>Модификация</th>
+    <th>Владелец СИ, ИНН</th>
+    <th>Поверитель</th>
+    <th>Место проведения поверки</th>
+    <th>№ ГРСИ</th>
+    <th>Зав. №</th>
+    <th>Состав СИ</th>
+    <th>Методика поверки</th>
+    <th>Эталоны</th>
+    <th>Температура</th>
+    <th>Давление</th>
+    <th>Влажность</th>
+    <th>Другие параметры</th>
+    <th>Диапазон</th>
+    <th>Погрешность</th>
+    <th>Исполнитель</th>
+  </tr>
+  {% for register in registers %}
+
+  <tr>
+    <td>{{ register.id_numb }}</td>
+    <td>{{ register.kind }}</td>
+    <td>{{ register.date }}</td>
+    <td>{{ register.mpi }}</td>
+    <td>{{ register.until }}</td>
+    <td>{{ register.name }}</td>
+    <td>{{ register.modif }}</td>
+    <td>{{ register.owner }}</td>
+    <td>{{ register.povername }}</td>
+    <td>{{ register.place }}</td>
+    <td>{{ register.descr }}</td>
+    <td>{{ register.number }}</td>
+    <td>{{ register.composition }}</td>
+    <td>{{ register.method }}</td>
+    <td>
+      {% for etalon in register.etalons.all %} 
+        {% if register.etalons.all.count == 1 %}
+          {{ etalon }} 
+        {% else %} 
+          {{ etalon }} {% if not forloop.last %}, 
+          {% else %}
+          {% endif %} 
+        {% endif %} 
+      {% endfor %}
+    </td>
+    <td>{{ register.temp_val }} {{ register.temp_kind }}</td>
+    <td>{{ register.press_val }} {{ register.press_kind }}</td>
+    <td>{{ register.hum_val }} {{ register.hum_kind }}</td>
+    <td>{{ register.others }}</td>
+    <td>
+      от {{ register.d_min }} до {{ register.d_max }} {{ register.ed_izm }}
+    </td>
+    <td>{{ register.pogr_kind }} {{ register.pogr_val }}</td>
+    <td>{{ register.impl_name }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+
+{% endblock body %}

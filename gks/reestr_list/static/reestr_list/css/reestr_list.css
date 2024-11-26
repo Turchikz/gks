@@ -1,0 +1,36 @@
+body {
+    background-color: #F1F3F6;
+}
+
+.nav-link {
+    text-align: center;
+
+}
+
+.navbar-logo {
+    background-color: #1e7fda;
+}
+
+A {
+    text-decoration: none; /* Убираем подчёркивание ссылок */
+
+    color: #1dc0cc; /* Цвет ссылок */
+}
+
+A:visited {
+
+
+    color: #1dc0cc; /* Цвет посещенных ссылок */
+}
+
+A:active {
+
+
+    color: #E1CC4F; /* Цвет активных ссылок */
+}
+
+A:hover {
+
+
+    color: #34C924; /* Цвет ссылки при наведении */
+}

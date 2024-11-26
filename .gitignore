@@ -3,3 +3,4 @@ main.py
 gks/gks/__pycache__
 gks/reestr_list/__pycache__
 gks/reestr_list/migrations/
+gks/db_backup.sqlite3
