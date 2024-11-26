@@ -1,6 +1,14 @@
 from typing import Any
 from django.contrib import admin
 from .models import *
+from import_export.admin import ImportExportModelAdmin
+from import_export import resources
+
+
+class RegisterResource(resources.ModelResource):
+
+    class Meta:
+        model = Register
 
 @admin.register(DescriptionType)
 class DescriptionTypeAdmin(admin.ModelAdmin):

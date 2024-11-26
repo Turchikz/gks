@@ -10,13 +10,8 @@ from django.http import Http404, HttpResponse, HttpResponseRedirect, HttpRespons
 
 
 
-class IndexView(View):
-    def get(self, requset:HttpRequest) -> HttpResponse:
-        context = {
-            'time_working': str(int(default_timer()) // 60) + ' минут',
-            'users': User.objects.all(),
-        }
-        return render(self.request, 'index.html', context=context)
+class IndexView(TemplateView):
+    template_name = 'index.html'
 
 def reestr_list(request: HttpRequest):
     
@@ -44,7 +39,6 @@ class Add_to_reestrView(CreateView):
         for instance in instances:
             instance.save()
         return self.render_to_response({'formset': formset})   
-        # return HttpResponseRedirect(self.get_success_url)   
         
     def post(self, request, *args, **kwargs):
         formset = Add_to_registerFormSet(request.POST)

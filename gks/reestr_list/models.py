@@ -136,7 +136,7 @@ class Register(models.Model):
         ('5 лет', '5'),
         ('6 лет', '6'),
     ), verbose_name='Межповерочный интервал', null=True, blank=True)
-    until = models.DateField('Действительно до', blank=True, null=True)
+    # until = models.DateField('Действительно до', blank=True, null=True)
     name = models.ForeignKey(Name, on_delete=models.PROTECT, verbose_name="Наименование средства измерений", blank=True,
                              null=True)
     modif = models.ForeignKey(Modification, on_delete=models.PROTECT, verbose_name="Модификация",
@@ -149,29 +149,29 @@ class Register(models.Model):
     descr = models.ForeignKey(DescriptionType, on_delete=models.PROTECT, verbose_name="Описание типа",
                               help_text='выберите описание типа', null=True, blank=True)
     number = models.CharField('Заводской номер', max_length=50, blank=True, null=True)
-    composition = models.CharField('Состав СИ', max_length=500, blank=True, null=True)
+    # composition = models.CharField('Состав СИ', max_length=500, blank=True, null=True)
     method = models.ForeignKey(Methodika, on_delete=models.PROTECT, verbose_name="Методика поверки",
                                    help_text='выберите методику поверки', blank=True, null=True)
     etalons = models.ManyToManyField(Etalon, related_name='etalons', blank=True)
-    temp_val = models.DecimalField('Температура', default=22.0, max_digits=3, decimal_places=1, null=True, blank=True)
-    class TempKind(models.TextChoices):
-        cel = '°С', '°С'
-        kel = 'К', 'К'
-        __empty__='выберите'
-    temp_kind = models.CharField('Ед.изм. температуры', max_length=100, choices=TempKind.choices,
-                                 default=TempKind.cel,
-                                 blank=True, null=True)
-    temp_t = ('temp_cal', 'temp_kind')
-    press_val = models.DecimalField('Давление', default=101.2, max_digits=4, decimal_places=1, blank=True, null=True)
-    class PresKind(models.TextChoices):
-        kpa = 'кПа', 'кПа'
-        mmrs = 'мм.рт.ст.', 'мм.рт.ст.'
-        __empty__='выберите'
-    press_kind = models.CharField('Ед.изм. давления', max_length=10, choices=PresKind.choices, default=PresKind.kpa,
-                                  blank=True, null=True)
-    hum_val = models.DecimalField('Влажность', default=45.0, max_digits=3, decimal_places=1, blank=True)
-    hum_kind = models.CharField('Ед.изм. влажности', max_length=10, default='%', blank=True, null=True)
-    others = models.CharField('Другие условия поверки', max_length=100, blank=True, null=True)
+    # temp_val = models.DecimalField('Температура', default=22.0, max_digits=3, decimal_places=1, null=True, blank=True)
+    # class TempKind(models.TextChoices):
+    #     cel = '°С', '°С'
+    #     kel = 'К', 'К'
+    #     __empty__='выберите'
+    # temp_kind = models.CharField('Ед.изм. температуры', max_length=100, choices=TempKind.choices,
+    #                              default=TempKind.cel,
+    #                              blank=True, null=True)
+    # temp_t = ('temp_cal', 'temp_kind')
+    # press_val = models.DecimalField('Давление', default=101.2, max_digits=4, decimal_places=1, blank=True, null=True)
+    # class PresKind(models.TextChoices):
+    #     kpa = 'кПа', 'кПа'
+    #     mmrs = 'мм.рт.ст.', 'мм.рт.ст.'
+    #     __empty__='выберите'
+    # press_kind = models.CharField('Ед.изм. давления', max_length=10, choices=PresKind.choices, default=PresKind.kpa,
+    #                               blank=True, null=True)
+    # hum_val = models.DecimalField('Влажность', default=45.0, max_digits=3, decimal_places=1, blank=True)
+    # hum_kind = models.CharField('Ед.изм. влажности', max_length=10, default='%', blank=True, null=True)
+    # others = models.CharField('Другие условия поверки', max_length=100, blank=True, null=True)
     d_min = models.CharField('Нижний диапазон', max_length=100, null=True, blank=True)
     d_max = models.CharField('Верхний диапазон', max_length=100, null=True, blank=True)
     class EdIzmKind(models.TextChoices):
@@ -190,14 +190,14 @@ class Register(models.Model):
         ppm = 'ppm', 'ppm'
         __empty__ = 'выберите единицы измерения'
     ed_izm = models.CharField('Единицы измерения', max_length=100, choices=EdIzmKind.choices, null=True, blank=True)
-    other_range = models.CharField('Другой диапазон', max_length=100, null=True, blank=True)
+    # other_range = models.CharField('Другой диапазон', max_length=100, null=True, blank=True)
     pogr_val = models.CharField('Погрешность', max_length=100, blank=True, null=True)
-    class PogrKind(models.TextChoices):
-        abs = 'абсолютная', 'абсолютная'
-        otn = 'относительная', 'относительная'
-        priv = 'приведённая', 'приведённая'
-    pogr_kind = models.CharField('Единицы измерения погрешности', max_length=100, choices=PogrKind.choices,
-                                 blank=True, null=True)
+    # class PogrKind(models.TextChoices):
+    #     abs = 'абсолютная', 'абсолютная'
+    #     otn = 'относительная', 'относительная'
+    #     priv = 'приведённая', 'приведённая'
+    # pogr_kind = models.CharField('Единицы измерения погрешности', max_length=100, choices=PogrKind.choices,
+    #                              blank=True, null=True)
     impl_name = models.ForeignKey(User, on_delete=models.PROTECT, verbose_name="Исполнитель", blank=True,
                                   null=True)
     publish = models.DateTimeField('Создано', default=timezone.now, blank=True, null=True)

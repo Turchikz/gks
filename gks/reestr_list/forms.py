@@ -11,15 +11,14 @@ class Add_to_registerForm(ModelForm):
     class Meta:
 
         model = Register
-        fields = ['kind', 'descr',     'date', 
-                  'id_numb',
-                  'number',  
-                  ]
+        fields = '__all__'
+        exclude=['id_numb', 'place', 'd_min', 'd_max', 'ed_izm', 
+                 'pogr_val', 'impl_name', 'status', 'publish', 'author',
+                 'place', 
+                ]
 
 
 Add_to_registerFormSet = modelformset_factory(
-    Register, extra=2, fields=['kind', 'descr', 'date', 'id_numb',
-                  'number', 
-                  ], form=Add_to_registerForm, 
+    Register, extra=1, form=Add_to_registerForm, 
 )
 
