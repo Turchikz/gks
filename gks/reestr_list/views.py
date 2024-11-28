@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User
 from django.http import HttpResponse, HttpRequest
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from .models import Register, Pover
 from timeit import default_timer
 from django.views.generic import TemplateView, CreateView, View
@@ -53,3 +53,11 @@ class Add_to_reestrView(CreateView):
 
         return self.render_to_response({'formset': formset})
    
+
+def register_detail(request, id_numb):
+    try:
+        register = Register.objects.get(id_numb=id_numb)
+    except Register.DoesNotExist:
+        raise Http404("нет детальной информации")
+    
+    return render(request, 'reestr_list/list_detail.html', {'register':register})

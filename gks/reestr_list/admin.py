@@ -1,14 +1,9 @@
 from typing import Any
 from django.contrib import admin
 from .models import *
-from import_export.admin import ImportExportModelAdmin
 from import_export import resources
 
 
-class RegisterResource(resources.ModelResource):
-
-    class Meta:
-        model = Register
 
 @admin.register(DescriptionType)
 class DescriptionTypeAdmin(admin.ModelAdmin):
@@ -83,12 +78,10 @@ class EtalonInline(admin.StackedInline):
 
 @admin.register(Register)
 class RegisterAdmin(admin.ModelAdmin):
-    actions = [
-        "export_csv"
-    ]
-    inlines = [
-        EtalonInline,
-    ]
+
+    # inlines = [
+    #     EtalonInline,
+    # ]
     list_display = ('id_numb', 'date', 'number', 'descr', )
     list_display_links = ('number', 'id_numb', 'descr')  # гиперссылки
     search_fields = ('date', 'id_numb', 'descr',)  # поиск

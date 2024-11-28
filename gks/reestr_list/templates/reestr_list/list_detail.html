@@ -26,11 +26,10 @@
     <th>Погрешность</th>
     <th>Исполнитель</th>
   </tr>
-  {% for register in registers %}
+
 
   <tr>
-    {% comment %} <td>{{ register.id_numb }}</td> {% endcomment %}
-    <td><a href="{{ register.get_absolute_url }}">{{ register.id_numb }}</a></td>
+    <td>{{ register.id_numb  }}</td>
     <td>{{ register.kind }}</td>
     <td>{{ register.date }}</td>
     <td>{{ register.mpi }}</td>
@@ -65,7 +64,6 @@
     <td>{{ register.pogr_kind }} {{ register.pogr_val }}</td>
     <td>{{ register.impl_name }}</td>
   </tr>
-  {% endfor %}
 </table>
 
 

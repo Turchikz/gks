@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
 from django.utils import timezone
+
 # Create your models here.
 
 
@@ -114,7 +115,7 @@ class Users(models.Model):
         verbose_name = 'Исполнитель'
         verbose_name_plural = 'Исполнители'
         ordering = ['username']
-        db_table = 'Исполнители'  # название таблицы в БД
+        db_table = 'usernames'  # название таблицы в БД
     
     def __str__(self):
         return self.username
@@ -228,5 +229,10 @@ class Register(models.Model):
 
     def __str__(self):
         return self.id_numb
+    
+    def get_absolute_url(self):
+        return reverse('reestr_list:register_detail', args=[self.id_numb])
+    
+    
 
     def get_category(self): return ", ".join([str(p) for p in self.etalons.all()])
