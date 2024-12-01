@@ -1,5 +1,4 @@
 from django.db import models
-from django.contrib.auth.models import User
 from django.urls import reverse
 from django.utils import timezone
 
@@ -108,7 +107,7 @@ class Places(models.Model):
     def __str__(self):
         return self.place
 
-class Users(models.Model):
+class Usernames(models.Model):
     username = models.CharField('Исполнитель', max_length=100, null=False, blank=False, unique=True)
 
     class Meta:
@@ -170,7 +169,7 @@ class Register(models.Model):
     #     __empty__='выберите'
     # press_kind = models.CharField('Ед.изм. давления', max_length=10, choices=PresKind.choices, default=PresKind.kpa,
     #                               blank=True, null=True)
-    # hum_val = models.DecimalField('Влажность', default=45.0, max_digits=3, decimal_places=1, blank=True)
+    hum_val = models.DecimalField('Влажность', default=45.0, max_digits=3, decimal_places=1, blank=True, null=True)
     # hum_kind = models.CharField('Ед.изм. влажности', max_length=10, default='%', blank=True, null=True)
     # others = models.CharField('Другие условия поверки', max_length=100, blank=True, null=True)
     d_min = models.CharField('Нижний диапазон', max_length=100, null=True, blank=True)
@@ -199,7 +198,7 @@ class Register(models.Model):
     #     priv = 'приведённая', 'приведённая'
     # pogr_kind = models.CharField('Единицы измерения погрешности', max_length=100, choices=PogrKind.choices,
     #                              blank=True, null=True)
-    impl_name = models.ForeignKey(User, on_delete=models.PROTECT, verbose_name="Исполнитель", blank=True,
+    impl_name = models.ForeignKey(Usernames, on_delete=models.PROTECT, verbose_name="Исполнитель", blank=True,
                                   null=True)
     publish = models.DateTimeField('Создано', default=timezone.now, blank=True, null=True)
     created_at = models.DateTimeField("Создано auto now add", auto_now_add=True, blank=True, null=True)
@@ -210,7 +209,6 @@ class Register(models.Model):
         PUBLISHED = 'Загружено в АРШИН', 'published'
 
     status = models.CharField(max_length=30, choices=Status.choices, default=Status.DRAFT, blank=True, null=True)
-    author = models.ForeignKey(User, on_delete=models.PROTECT, related_name='reestr_posts', blank=True, null=True)
     objects = models.Manager()  # менеджер, применяемый по умолчанию
     
 

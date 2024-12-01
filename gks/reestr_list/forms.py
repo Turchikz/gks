@@ -14,7 +14,7 @@ class Add_to_registerForm(ModelForm):
         fields = '__all__'
         exclude=['id_numb', 'place', 'd_min', 'd_max', 'ed_izm', 
                  'pogr_val', 'impl_name', 'status', 'publish', 'author',
-                 'place', 
+                 'place', 'hum_val',
                 ]
 
 

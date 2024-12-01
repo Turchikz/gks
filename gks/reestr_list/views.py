@@ -1,25 +1,38 @@
 from django.contrib.auth.models import User
-from django.http import HttpResponse, HttpRequest
-from django.shortcuts import render, redirect, reverse
-from .models import Register, Pover
-from timeit import default_timer
-from django.views.generic import TemplateView, CreateView, View
+from django.core.paginator import Paginator, EmptyPage
+from django.http import HttpResponse, HttpRequest, Http404, HttpResponseRedirect, HttpResponsePermanentRedirect
+from django.shortcuts import render, redirect
+from django.views.generic import TemplateView, CreateView, ListView, View
 from .forms import Add_to_registerForm, Add_to_registerFormSet
-from django.urls import reverse_lazy
-from django.http import Http404, HttpResponse, HttpResponseRedirect, HttpResponsePermanentRedirect
+from .models import Register
 
 
 
 class IndexView(TemplateView):
     template_name = 'index.html'
 
-def reestr_list(request: HttpRequest):
+# def reestr_list(request: HttpRequest):
     
-    context = {
-        'registers': Register.objects.all(),
-        'povers': Pover.objects.all(),
-    }
-    return render(request, 'reestr_list/list.html', context=context)
+#     context = {
+#         'registers': Register.objects.all(),
+#         'povers': Pover.objects.all(),
+        
+#     }
+#     register_model = Register.objects.all()
+#     paginator = Paginator(register_model, 2)
+#     page_number = request.GET.get('page', 1)
+#     try:
+#         registers = paginator.page(page_number)
+#     except EmptyPage:
+#         registers = paginator.page(paginator.num_pages)
+
+#     return render(request, 'reestr_list/list.html', {'registers': registers})
+
+class ReestrListView(ListView):
+    queryset = Register.objects.all()
+    context_object_name = 'reestr_list'
+    paginate_by = 3
+    template_name = 'reestr_list/list.html'
 
 
 class Add_to_reestrView(CreateView):

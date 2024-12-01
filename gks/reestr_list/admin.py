@@ -1,7 +1,7 @@
 from typing import Any
 from django.contrib import admin
 from .models import *
-from import_export import resources
+
 
 
 
@@ -66,8 +66,8 @@ class PlacesAdmin(admin.ModelAdmin):
     search_fields = ('place',)  # поиск
     list_filter = ('place',)  # фильтрация
 
-@admin.register(Users)
-class UsersAdmin(admin.ModelAdmin):
+@admin.register(Usernames)
+class Usernames(admin.ModelAdmin):
     list_display = ('username',)
     list_display_links = ('username',)  # гиперссылки
     search_fields = ('username',)  # поиск

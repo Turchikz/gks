@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "reestr_list",
-    "import_export",
+    # "import_export",
 ]
 
 MIDDLEWARE = [
@@ -75,23 +75,35 @@ WSGI_APPLICATION = "gks.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.sqlite3",
-#         "NAME": BASE_DIR / "db.sqlite3",
-#     }
-# }
-
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "gks_reestr",
-        "USER": "postgres",
-        "PASSWORD": "rootadmin",
-        "HOST": "127.0.0.1",
-        "PORT": "5432",
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'register_db',
+        'USER': 'regster',
+        'PASSWORD': 'rootadmin',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+        'OPTIONS': { 'client_encoding': 'UTF-8', }, 
+    }
+}
+
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": "gks_reestr",
+#         "USER": "postgres",
+#         "PASSWORD": "rootadmin",
+#         "HOST": "127.0.0.1",
+#         "PORT": "5432",
+#     }
+# }
 
 
 # Password validation

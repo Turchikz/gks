@@ -26,7 +26,7 @@
     <th>Погрешность</th>
     <th>Исполнитель</th>
   </tr>
-  {% for register in registers %}
+  {% for register in reestr_list %}
 
   <tr>
     {% comment %} <td>{{ register.id_numb }}</td> {% endcomment %}
@@ -68,5 +68,6 @@
   {% endfor %}
 </table>
 
+{% include "reestr_list/pagination.html" with page=page_obj  %}
 
 {% endblock body %}

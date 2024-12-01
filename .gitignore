@@ -1,5 +1,6 @@
 main.py
 .venv
+venv
 gks/gks/__pycache__
 gks/reestr_list/__pycache__
 gks/reestr_list/migrations/

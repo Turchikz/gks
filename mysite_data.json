@@ -1,0 +1,2090 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-10-26T10:49:45.246Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "1",
+    "object_repr": "администраторы",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2024-10-26T10:50:21.323Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2024-10-26T10:51:20.765Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "2",
+    "object_repr": "Исполнители",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2024-10-26T10:53:01.409Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "3",
+    "object_repr": "Поверители",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2024-10-26T10:53:13.175Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "1",
+    "object_repr": "Администраторы",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2024-10-26T10:53:55.951Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2024-10-27T06:02:31.206Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "ПАО \"Русал Братский Алюминиевый Завод\", ИНН 3803100054",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2024-10-27T06:02:53.253Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "АО \"АПАТИТ\", ИНН 5103070023",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2024-10-27T06:03:05.257Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "АО \"АРКТИКГАЗ\", ИНН 8904002359",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2024-10-27T06:03:17.942Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "4",
+    "object_repr": "АО \"Ачимгаз\", ИНН 8904047896",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2024-10-27T06:04:10.607Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "ЗАО «Нортгаз»",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2024-10-27T06:04:26.470Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Поверочная лаборатория ООО НПП \"ГКС\", г.Казань, ул.Васильченко,д.30",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2024-10-27T06:04:33.644Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "АО «АРКТИКГАЗ», СНГКМ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2024-10-27T06:04:41.454Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "4",
+    "object_repr": "ООО \"АЧИМ ДЕВЕЛОПМЕНТ\"",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2024-10-27T06:05:24.319Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "МП 206.1-052-2018",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2024-10-27T06:05:28.359Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "ГОСТ 8.461-2009",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2024-10-27T06:05:33.546Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "МП 13-311229-2015 с изменением №1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2024-10-27T06:05:38.812Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Инструкцией «Датчики температуры 644, 3144Р. Методика поверки», согласованной с ГЦИ СИ ФГУП «ВНИИМС», август 2008 г.",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2024-10-27T06:05:44.182Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "МП 14683-09",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2024-10-27T06:05:49.432Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "МИ 2124-90",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2024-10-27T06:05:54.807Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "МП 14061-10",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2024-10-27T06:10:10.339Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Евсеев А.В.",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2024-10-27T06:10:14.874Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Мугинов А.Р.",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2024-10-27T06:10:19.338Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Даутов М.И.",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2024-10-27T06:10:24.549Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Гарифуллин Д.Н.",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2024-10-27T06:10:29.129Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "Саитов А.И.",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2024-10-27T06:10:33.678Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "Якимов А.С.",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2024-10-27T06:11:00.792Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "МП-НЧ-2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2024-10-27T06:11:08.166Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Rosemount 0065",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2024-10-27T06:11:13.169Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "АБАК ПЛК",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2024-10-27T06:11:17.680Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "ТСМУ 031С",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2024-10-27T06:11:22.546Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "МП4-У",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2024-10-27T06:11:27.883Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "HiC2025",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2024-10-27T06:11:44.660Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "1",
+    "object_repr": "Манометр избыточного давления показывающий МП-У",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2024-10-27T06:11:51.804Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "2",
+    "object_repr": "Термопреобразователь сопротивления платиновый серии 65",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2024-10-27T06:12:02.817Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "3",
+    "object_repr": "Модуль задатчик напряжения постоянного тока МЗН",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2024-10-27T06:12:19.764Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "4",
+    "object_repr": "Термометр биметаллический",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2024-10-27T06:12:42.611Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "28354-10",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2024-10-27T06:12:45.089Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "2",
+    "object_repr": "63211-16",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2024-10-27T06:12:52.706Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "46359-11",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2024-10-27T06:12:54.150Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "4",
+    "object_repr": "39539-08",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2024-10-27T06:13:12.438Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "Киселев К.А.",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2024-10-27T06:13:16.917Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "2",
+    "object_repr": "Габдельхаков М.И.",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2024-10-27T06:13:27.304Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "3",
+    "object_repr": "Малышев Р.С.",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2024-10-27T06:13:30.959Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "4",
+    "object_repr": "Якимов А.С.",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2024-10-27T06:13:47.986Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "3.7.АМО.0001.2022",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2024-10-27T06:13:53.309Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "2",
+    "object_repr": "22237.08.2Р.00930565",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2024-10-27T06:13:58.004Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "3",
+    "object_repr": "58668.14.2Р.00864271",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2024-10-27T06:14:02.179Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "4",
+    "object_repr": "79679.20.РЭ.01035051",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2024-10-27T06:14:08.820Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "5",
+    "object_repr": "22237.08.2Р.00930565",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2024-10-27T06:14:21.133Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "2",
+    "object_repr": "22237.08.2Р.00930565",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2024-10-27T06:18:30.022Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "00001-24",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2024-11-22T07:05:31.641Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "3",
+    "object_repr": "adminka",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add Реестр",
+    "content_type": 7,
+    "codename": "add_register"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change Реестр",
+    "content_type": 7,
+    "codename": "change_register"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete Реестр",
+    "content_type": 7,
+    "codename": "delete_register"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view Реестр",
+    "content_type": 7,
+    "codename": "view_register"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add Модификация",
+    "content_type": 8,
+    "codename": "add_modification"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change Модификация",
+    "content_type": 8,
+    "codename": "change_modification"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete Модификация",
+    "content_type": 8,
+    "codename": "delete_modification"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view Модификация",
+    "content_type": 8,
+    "codename": "view_modification"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add Методика поверки",
+    "content_type": 9,
+    "codename": "add_methodika"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change Методика поверки",
+    "content_type": 9,
+    "codename": "change_methodika"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete Методика поверки",
+    "content_type": 9,
+    "codename": "delete_methodika"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view Методика поверки",
+    "content_type": 9,
+    "codename": "view_methodika"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add Исполнитель",
+    "content_type": 10,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change Исполнитель",
+    "content_type": 10,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete Исполнитель",
+    "content_type": 10,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view Исполнитель",
+    "content_type": 10,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add Место проведения",
+    "content_type": 11,
+    "codename": "add_places"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change Место проведения",
+    "content_type": 11,
+    "codename": "change_places"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete Место проведения",
+    "content_type": 11,
+    "codename": "delete_places"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view Место проведения",
+    "content_type": 11,
+    "codename": "view_places"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add Владелец",
+    "content_type": 12,
+    "codename": "add_owner"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change Владелец",
+    "content_type": 12,
+    "codename": "change_owner"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete Владелец",
+    "content_type": 12,
+    "codename": "delete_owner"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view Владелец",
+    "content_type": 12,
+    "codename": "view_owner"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add Наименование СИ",
+    "content_type": 13,
+    "codename": "add_name"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change Наименование СИ",
+    "content_type": 13,
+    "codename": "change_name"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete Наименование СИ",
+    "content_type": 13,
+    "codename": "delete_name"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view Наименование СИ",
+    "content_type": 13,
+    "codename": "view_name"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add Описание типа",
+    "content_type": 14,
+    "codename": "add_descriptiontype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change Описание типа",
+    "content_type": 14,
+    "codename": "change_descriptiontype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete Описание типа",
+    "content_type": 14,
+    "codename": "delete_descriptiontype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view Описание типа",
+    "content_type": 14,
+    "codename": "view_descriptiontype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add Поверитель",
+    "content_type": 15,
+    "codename": "add_pover"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change Поверитель",
+    "content_type": 15,
+    "codename": "change_pover"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete Поверитель",
+    "content_type": 15,
+    "codename": "delete_pover"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view Поверитель",
+    "content_type": 15,
+    "codename": "view_pover"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add Эталон",
+    "content_type": 16,
+    "codename": "add_etalon"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change Эталон",
+    "content_type": 16,
+    "codename": "change_etalon"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete Эталон",
+    "content_type": 16,
+    "codename": "delete_etalon"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view Эталон",
+    "content_type": 16,
+    "codename": "view_etalon"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add Исполнитель",
+    "content_type": 10,
+    "codename": "add_users"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change Исполнитель",
+    "content_type": 10,
+    "codename": "change_users"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete Исполнитель",
+    "content_type": 10,
+    "codename": "delete_users"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view Исполнитель",
+    "content_type": 10,
+    "codename": "view_users"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Can add Исполнитель",
+    "content_type": 10,
+    "codename": "add_usernames"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 70,
+  "fields": {
+    "name": "Can change Исполнитель",
+    "content_type": 10,
+    "codename": "change_usernames"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 71,
+  "fields": {
+    "name": "Can delete Исполнитель",
+    "content_type": 10,
+    "codename": "delete_usernames"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 72,
+  "fields": {
+    "name": "Can view Исполнитель",
+    "content_type": 10,
+    "codename": "view_usernames"
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "Администраторы",
+    "permissions": [
+      9,
+      10,
+      11,
+      12,
+      5,
+      6,
+      7,
+      8,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      53,
+      54,
+      55,
+      56,
+      61,
+      62,
+      63,
+      64,
+      33,
+      34,
+      35,
+      36,
+      29,
+      30,
+      31,
+      32,
+      49,
+      50,
+      51,
+      52,
+      45,
+      46,
+      47,
+      48,
+      41,
+      42,
+      43,
+      44,
+      57,
+      58,
+      59,
+      60,
+      25,
+      26,
+      27,
+      28,
+      37,
+      38,
+      39,
+      40
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 2,
+  "fields": {
+    "name": "Исполнители",
+    "permissions": [
+      4,
+      12,
+      8,
+      16,
+      20,
+      56,
+      64,
+      36,
+      32,
+      52,
+      48,
+      44,
+      60,
+      28,
+      40,
+      24
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 3,
+  "fields": {
+    "name": "Поверители",
+    "permissions": [
+      4,
+      12,
+      8,
+      16,
+      17,
+      20,
+      53,
+      56,
+      61,
+      33,
+      36,
+      29,
+      32,
+      49,
+      52,
+      45,
+      48,
+      41,
+      44,
+      60,
+      25,
+      28,
+      40,
+      24
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$xCawodh4b7aPjB28ynL4iS$v9+8ujfnBwd8z86n6HV/TFhfFd4fCeRaymyGESP2NK4=",
+    "last_login": "2024-11-22T07:04:27.863Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "Артур",
+    "last_name": "Саитов",
+    "email": "saitov.artur96@mail.ru",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-10-26T08:41:46Z",
+    "groups": [
+      1,
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$j8vPxb48XmWRWrs6KoOGWh$oiZSLG+se4TG+ov19XFAkQNfcXRizFQ/mlpAcKFjgrA=",
+    "last_login": "2024-11-29T11:56:31.729Z",
+    "is_superuser": true,
+    "username": "adminka",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-11-29T11:56:10.316Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "reestr_list",
+    "model": "register"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "reestr_list",
+    "model": "modification"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "reestr_list",
+    "model": "methodika"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "reestr_list",
+    "model": "usernames"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "reestr_list",
+    "model": "places"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "reestr_list",
+    "model": "owner"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "reestr_list",
+    "model": "name"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "reestr_list",
+    "model": "descriptiontype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "reestr_list",
+    "model": "pover"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "reestr_list",
+    "model": "etalon"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "h9blztzilij0hss61oge0gykrx3cga6b",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyHLtgXx6N1vILvAStXQpLQn47_bJj3obTLvzbxVoHUpYW15DmNSF9Wr02_HFJ-57iA9qN4nHae6zCPrXdEHbfo2pfy6Hu7fQaFWtrUkRhdFgM4ZMkVCK5YNDJa73MMWDDsj3qF0ySAKskcDMoBEbxjV5wsEwjgP:1tGzbr:jo_009Hr-NNWlw1glfOCYOID3lVoqgr507kc_HiTiG0",
+    "expire_date": "2024-12-13T11:56:31.736Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "iqf8gucayidu1ml7qrknxcaylr2tm3r5",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFDeQWX7v0GAjODVA0kpV0Z_12bdKHbe865LxHTtta4DV7iTOIslDj9bjnhg9sO6J7arUvsbV3mLHdFHnTIayd-Xg7376CmUb81muIDeshoizaYbJg0KdQOklFUODujXIaiLBABYdFBWc-TLcyAYMT7A_MvOEo:1t4cNg:Zx_voM_jDcVbdEA4dLuIdxULIyJDksfH9QByogKl5AM",
+    "expire_date": "2024-11-09T08:42:44.994Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "pzg0ug8vwzlc2xg4h7bjp49x7a2xd28b",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pAZqBRcuu8ZyAwMUjVtUtqV8e7apAvdvvf-f6lI21rj1mSJY1YXher0y5jSQ6Zd5DtNt1mneVqXkfWe6MM2PcxZntej_Tuo1Oq-tlm4s2hLYeMwGIGupwJA4Mq5ZyYSFzCwh_SllsETGAwe-8SuiHp_AO-NOBM:1tENiN:SWqFXCDgFG5pP1sQUXz8jP6Q-zqd96lMb1gprrpYJIQ",
+    "expire_date": "2024-12-06T07:04:27.869Z"
+  }
+},
+{
+  "model": "reestr_list.descriptiontype",
+  "pk": 1,
+  "fields": {
+    "date": null,
+    "link": null,
+    "number": "28354-10",
+    "producer": null
+  }
+},
+{
+  "model": "reestr_list.descriptiontype",
+  "pk": 2,
+  "fields": {
+    "date": null,
+    "link": null,
+    "number": "63211-16",
+    "producer": null
+  }
+},
+{
+  "model": "reestr_list.descriptiontype",
+  "pk": 3,
+  "fields": {
+    "date": null,
+    "link": null,
+    "number": "46359-11",
+    "producer": null
+  }
+},
+{
+  "model": "reestr_list.descriptiontype",
+  "pk": 4,
+  "fields": {
+    "date": null,
+    "link": null,
+    "number": "39539-08",
+    "producer": null
+  }
+},
+{
+  "model": "reestr_list.etalon",
+  "pk": 1,
+  "fields": {
+    "code": "3.7.АМО.0001.2022",
+    "name": ""
+  }
+},
+{
+  "model": "reestr_list.etalon",
+  "pk": 3,
+  "fields": {
+    "code": "58668.14.2Р.00864271",
+    "name": ""
+  }
+},
+{
+  "model": "reestr_list.etalon",
+  "pk": 4,
+  "fields": {
+    "code": "79679.20.РЭ.01035051",
+    "name": ""
+  }
+},
+{
+  "model": "reestr_list.etalon",
+  "pk": 5,
+  "fields": {
+    "code": "22237.08.2Р.00930565",
+    "name": ""
+  }
+},
+{
+  "model": "reestr_list.modification",
+  "pk": 1,
+  "fields": {
+    "modif": "МП-НЧ-2"
+  }
+},
+{
+  "model": "reestr_list.modification",
+  "pk": 2,
+  "fields": {
+    "modif": "Rosemount 0065"
+  }
+},
+{
+  "model": "reestr_list.modification",
+  "pk": 3,
+  "fields": {
+    "modif": "АБАК ПЛК"
+  }
+},
+{
+  "model": "reestr_list.modification",
+  "pk": 4,
+  "fields": {
+    "modif": "ТСМУ 031С"
+  }
+},
+{
+  "model": "reestr_list.modification",
+  "pk": 5,
+  "fields": {
+    "modif": "МП4-У"
+  }
+},
+{
+  "model": "reestr_list.modification",
+  "pk": 6,
+  "fields": {
+    "modif": "HiC2025"
+  }
+},
+{
+  "model": "reestr_list.methodika",
+  "pk": 1,
+  "fields": {
+    "method": "МП 206.1-052-2018"
+  }
+},
+{
+  "model": "reestr_list.methodika",
+  "pk": 2,
+  "fields": {
+    "method": "ГОСТ 8.461-2009"
+  }
+},
+{
+  "model": "reestr_list.methodika",
+  "pk": 3,
+  "fields": {
+    "method": "МП 13-311229-2015 с изменением №1"
+  }
+},
+{
+  "model": "reestr_list.methodika",
+  "pk": 4,
+  "fields": {
+    "method": "Инструкцией «Датчики температуры 644, 3144Р. Методика поверки», согласованной с ГЦИ СИ ФГУП «ВНИИМС», август 2008 г."
+  }
+},
+{
+  "model": "reestr_list.methodika",
+  "pk": 5,
+  "fields": {
+    "method": "МП 14683-09"
+  }
+},
+{
+  "model": "reestr_list.methodika",
+  "pk": 6,
+  "fields": {
+    "method": "МИ 2124-90"
+  }
+},
+{
+  "model": "reestr_list.methodika",
+  "pk": 7,
+  "fields": {
+    "method": "МП 14061-10"
+  }
+},
+{
+  "model": "reestr_list.name",
+  "pk": 1,
+  "fields": {
+    "name": "Манометр избыточного давления показывающий МП-У"
+  }
+},
+{
+  "model": "reestr_list.name",
+  "pk": 2,
+  "fields": {
+    "name": "Термопреобразователь сопротивления платиновый серии 65"
+  }
+},
+{
+  "model": "reestr_list.name",
+  "pk": 3,
+  "fields": {
+    "name": "Модуль задатчик напряжения постоянного тока МЗН"
+  }
+},
+{
+  "model": "reestr_list.name",
+  "pk": 4,
+  "fields": {
+    "name": "Термометр биметаллический"
+  }
+},
+{
+  "model": "reestr_list.owner",
+  "pk": 1,
+  "fields": {
+    "owner": "ПАО \"Русал Братский Алюминиевый Завод\", ИНН 3803100054"
+  }
+},
+{
+  "model": "reestr_list.owner",
+  "pk": 2,
+  "fields": {
+    "owner": "АО \"АПАТИТ\", ИНН 5103070023"
+  }
+},
+{
+  "model": "reestr_list.owner",
+  "pk": 3,
+  "fields": {
+    "owner": "АО \"АРКТИКГАЗ\", ИНН 8904002359"
+  }
+},
+{
+  "model": "reestr_list.owner",
+  "pk": 4,
+  "fields": {
+    "owner": "АО \"Ачимгаз\", ИНН 8904047896"
+  }
+},
+{
+  "model": "reestr_list.pover",
+  "pk": 1,
+  "fields": {
+    "povername": "Киселев К.А."
+  }
+},
+{
+  "model": "reestr_list.pover",
+  "pk": 2,
+  "fields": {
+    "povername": "Габдельхаков М.И."
+  }
+},
+{
+  "model": "reestr_list.pover",
+  "pk": 3,
+  "fields": {
+    "povername": "Малышев Р.С."
+  }
+},
+{
+  "model": "reestr_list.pover",
+  "pk": 4,
+  "fields": {
+    "povername": "Якимов А.С."
+  }
+},
+{
+  "model": "reestr_list.places",
+  "pk": 1,
+  "fields": {
+    "place": "ЗАО «Нортгаз»"
+  }
+},
+{
+  "model": "reestr_list.places",
+  "pk": 2,
+  "fields": {
+    "place": "Поверочная лаборатория ООО НПП \"ГКС\", г.Казань, ул.Васильченко,д.30"
+  }
+},
+{
+  "model": "reestr_list.places",
+  "pk": 3,
+  "fields": {
+    "place": "АО «АРКТИКГАЗ», СНГКМ"
+  }
+},
+{
+  "model": "reestr_list.places",
+  "pk": 4,
+  "fields": {
+    "place": "ООО \"АЧИМ ДЕВЕЛОПМЕНТ\""
+  }
+},
+{
+  "model": "reestr_list.register",
+  "pk": 1,
+  "fields": {
+    "id_numb": "00001-24",
+    "kind": "периодическая",
+    "date": "2024-10-27",
+    "mpi": "1 год",
+    "name": 1,
+    "modif": 5,
+    "owner": 3,
+    "povername": 1,
+    "place": 3,
+    "descr": 3,
+    "number": "1",
+    "method": 6,
+    "hum_val": "45.0",
+    "d_min": "0",
+    "d_max": "1",
+    "ed_izm": "МПа",
+    "pogr_val": null,
+    "impl_name": null,
+    "publish": "2024-10-27T06:17:12Z",
+    "created_at": "2024-10-27T06:18:30.014Z",
+    "updated": "2024-10-27T06:18:30.014Z",
+    "status": "Не загружено в АРШИН",
+    "etalons": [
+      5,
+      3
+    ]
+  }
+},
+{
+  "model": "reestr_list.register",
+  "pk": 2,
+  "fields": {
+    "id_numb": "2-24",
+    "kind": "периодическая",
+    "date": "2024-10-09",
+    "mpi": "2 года",
+    "name": 1,
+    "modif": 2,
+    "owner": 3,
+    "povername": 2,
+    "place": null,
+    "descr": 1,
+    "number": "12415",
+    "method": 5,
+    "hum_val": "45.0",
+    "d_min": null,
+    "d_max": null,
+    "ed_izm": null,
+    "pogr_val": null,
+    "impl_name": null,
+    "publish": "2024-11-30T07:02:20.963Z",
+    "created_at": "2024-11-30T07:02:20.986Z",
+    "updated": "2024-11-30T07:02:21.008Z",
+    "status": "Не загружено в АРШИН",
+    "etalons": [
+      5,
+      3,
+      4
+    ]
+  }
+},
+{
+  "model": "reestr_list.register",
+  "pk": 3,
+  "fields": {
+    "id_numb": "3-24",
+    "kind": "периодическая",
+    "date": "2024-10-09",
+    "mpi": "2 года",
+    "name": 1,
+    "modif": 2,
+    "owner": 3,
+    "povername": 2,
+    "place": null,
+    "descr": 1,
+    "number": "12415",
+    "method": 5,
+    "hum_val": "45.0",
+    "d_min": null,
+    "d_max": null,
+    "ed_izm": null,
+    "pogr_val": null,
+    "impl_name": null,
+    "publish": "2024-11-30T07:02:23.796Z",
+    "created_at": "2024-11-30T07:02:23.806Z",
+    "updated": "2024-11-30T07:02:23.832Z",
+    "status": "Не загружено в АРШИН",
+    "etalons": [
+      5,
+      3,
+      4
+    ]
+  }
+},
+{
+  "model": "reestr_list.register",
+  "pk": 4,
+  "fields": {
+    "id_numb": "4-24",
+    "kind": "периодическая",
+    "date": "2024-10-09",
+    "mpi": "3 года",
+    "name": 1,
+    "modif": 6,
+    "owner": 2,
+    "povername": 1,
+    "place": null,
+    "descr": 1,
+    "number": "432",
+    "method": 5,
+    "hum_val": "45.0",
+    "d_min": null,
+    "d_max": null,
+    "ed_izm": null,
+    "pogr_val": null,
+    "impl_name": null,
+    "publish": "2024-11-30T07:02:52.812Z",
+    "created_at": "2024-11-30T07:02:52.832Z",
+    "updated": "2024-11-30T07:02:52.854Z",
+    "status": "Не загружено в АРШИН",
+    "etalons": [
+      5,
+      1
+    ]
+  }
+},
+{
+  "model": "reestr_list.register",
+  "pk": 5,
+  "fields": {
+    "id_numb": "5-24",
+    "kind": "периодическая",
+    "date": "2024-10-09",
+    "mpi": "3 года",
+    "name": 1,
+    "modif": 6,
+    "owner": 2,
+    "povername": 1,
+    "place": null,
+    "descr": 1,
+    "number": "432",
+    "method": 5,
+    "hum_val": "45.0",
+    "d_min": null,
+    "d_max": null,
+    "ed_izm": null,
+    "pogr_val": null,
+    "impl_name": null,
+    "publish": "2024-11-30T07:02:56.675Z",
+    "created_at": "2024-11-30T07:02:56.683Z",
+    "updated": "2024-11-30T07:02:56.704Z",
+    "status": "Не загружено в АРШИН",
+    "etalons": [
+      5,
+      1
+    ]
+  }
+}
+]
