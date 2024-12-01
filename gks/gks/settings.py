@@ -82,28 +82,18 @@ DATABASES = {
     }
 }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'register_db',
-        'USER': 'regster',
-        'PASSWORD': 'rootadmin',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
-        'OPTIONS': { 'client_encoding': 'UTF-8', }, 
-    }
-}
-
 # DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.postgresql",
-#         "NAME": "gks_reestr",
-#         "USER": "postgres",
-#         "PASSWORD": "rootadmin",
-#         "HOST": "127.0.0.1",
-#         "PORT": "5432",
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'register_db',
+#         'USER': 'regster',
+#         'PASSWORD': 'rootadmin',
+#         'HOST': '127.0.0.1',
+#         'PORT': '5432',
+#         'OPTIONS': { 'client_encoding': 'UTF-8', }, 
 #     }
 # }
+
 
 
 # Password validation
