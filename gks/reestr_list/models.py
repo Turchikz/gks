@@ -1,6 +1,8 @@
 from django.db import models
 from django.urls import reverse
 from django.utils import timezone
+from import_export import resources
+
 
 # Create your models here.
 
@@ -234,3 +236,5 @@ class Register(models.Model):
     
 
     def get_category(self): return ", ".join([str(p) for p in self.etalons.all()])
+
+

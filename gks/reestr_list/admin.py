@@ -1,8 +1,18 @@
-from typing import Any
-from django.contrib import admin
 from .models import *
+from django.contrib import admin
+from import_export import fields
+from import_export.widgets import ForeignKeyWidget
+from import_export.admin import ImportExportModelAdmin, ExportActionMixin
+from typing import Any
 
-
+class RegisterResource(resources.ModelResource):
+    povername = fields.Field(
+        column_name='povername',
+        attribute='povername',
+        widget=ForeignKeyWidget(Pover, field='povername'))
+    class Meta:
+        model = Register
+        # fields = ('povername',)
 
 
 @admin.register(DescriptionType)
@@ -76,12 +86,13 @@ class Usernames(admin.ModelAdmin):
 class EtalonInline(admin.StackedInline):
     model = Register.etalons.through
 
-@admin.register(Register)
-class RegisterAdmin(admin.ModelAdmin):
 
-    # inlines = [
-    #     EtalonInline,
-    # ]
+@admin.register(Register)
+class RegisterAdmin(ImportExportModelAdmin, ExportActionMixin):
+    resource_classes = [RegisterResource]
+    inlines = [
+        EtalonInline,
+    ]
     list_display = ('id_numb', 'date', 'number', 'descr', )
     list_display_links = ('number', 'id_numb', 'descr')  # гиперссылки
     search_fields = ('date', 'id_numb', 'descr',)  # поиск
@@ -92,3 +103,20 @@ class RegisterAdmin(admin.ModelAdmin):
 
     def get_queryset(self, request):
         return Register.objects.select_related('descr').prefetch_related('etalons')
+
+# @admin.register(Register)
+# class RegisterAdmin(admin.ModelAdmin):
+
+#     # inlines = [
+#     #     EtalonInline,
+#     # ]
+#     list_display = ('id_numb', 'date', 'number', 'descr', )
+#     list_display_links = ('number', 'id_numb', 'descr')  # гиперссылки
+#     search_fields = ('date', 'id_numb', 'descr',)  # поиск
+#     list_filter = ('date', 'descr',)  # фильтрация
+#     ordering = ('id_numb',)
+#     date_hierarchy = 'date'
+#     filter_horizontal = ['etalons']
+
+#     def get_queryset(self, request):
+#         return Register.objects.select_related('descr').prefetch_related('etalons')

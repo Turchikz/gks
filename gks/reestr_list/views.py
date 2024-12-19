@@ -11,22 +11,6 @@ from .models import Register
 class IndexView(TemplateView):
     template_name = 'index.html'
 
-# def reestr_list(request: HttpRequest):
-    
-#     context = {
-#         'registers': Register.objects.all(),
-#         'povers': Pover.objects.all(),
-        
-#     }
-#     register_model = Register.objects.all()
-#     paginator = Paginator(register_model, 2)
-#     page_number = request.GET.get('page', 1)
-#     try:
-#         registers = paginator.page(page_number)
-#     except EmptyPage:
-#         registers = paginator.page(paginator.num_pages)
-
-#     return render(request, 'reestr_list/list.html', {'registers': registers})
 
 class ReestrListView(ListView):
     queryset = Register.objects.all()
