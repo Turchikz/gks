@@ -1,0 +1,43 @@
+   services:
+       db:
+         image: postgres:17
+         container_name: db
+         restart: always
+         volumes:
+           - pgdata:/var/lib/postgresql/data
+         environment:
+           - POSTGRES_DB=postgres
+           - POSTGRES_USER=postgres
+           - POSTGRES_PASSWORD=postgres
+         ports:
+           - "5432:5432"
+           - "8080:8080"
+         networks:
+           - djangonetwork
+       webdjango:
+         build: .
+         container_name: django
+         command: >
+          sh -c "python gks/manage.py makemigrations &&
+                python gks/manage.py migrate &&
+                python gks/manage.py runserver 0.0.0.0:8000"
+             
+         volumes:
+           - .:/code
+         ports:
+           - "8000:8000"
+         environment:
+           - POSTGRES_NAME=postgres
+           - POSTGRES_USER=postgres
+           - POSTGRES_PASSWORD=postgres
+         depends_on:
+           - db
+         links:
+           - db:db
+         networks:
+           - djangonetwork
+   networks:
+       djangonetwork:
+         driver: bridge
+   volumes:
+     pgdata:
