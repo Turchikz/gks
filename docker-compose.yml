@@ -20,7 +20,7 @@
          command: >
           sh -c "python gks/manage.py makemigrations &&
                 python gks/manage.py migrate &&
-                python gks/manage.py runserver 0.0.0.0:8000"
+                python gks/manage.py runserver 0.0.0.0:8000 &&"
              
          volumes:
            - .:/code
@@ -36,6 +36,19 @@
            - db:db
          networks:
            - djangonetwork
+       
+       caddy:  
+        image: caddy:latest  
+        restart: unless-stopped  
+        ports:  
+          - "80:80"  
+          - "443:443"  
+        volumes:  
+          - ./Caddyfile:/etc/caddy/Caddyfile  
+          - ./caddy_data:/data  
+          - ./caddy_config:/config  
+          - .:/code
+
    networks:
        djangonetwork:
          driver: bridge
